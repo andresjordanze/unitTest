@@ -1,13 +1,15 @@
 require 'person'
+require 'spec_helper'
 
 describe Person do
 
-	before(:each) do
-		@person = Person.new
-	end
+	describe "#to get correct age" do
+		person = Person.new('FirstName','LastName',23)
+		puts person.Age
 
-	it 'deberia mostrar el marcador' do
-		@person.Age = '25'
-		expect(@person.Age).to eq('25')
+		it 'returns person correct age' do
+			expectedAge = 23
+			expect(person.Age).to eq(expectedAge)
+		end
 	end
 end

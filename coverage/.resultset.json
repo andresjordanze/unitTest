@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "E:/Universidad Catolica Boliviana/Ingenieria de Calidad/UnitTest/string_ops.rb": [
+      "E:/Universidad Catolica Boliviana/Ingenieria de Calidad/unitTest/string_ops.rb": [
         1,
         1,
         1,
@@ -15,8 +15,30 @@
         0,
         null,
         null
+      ],
+      "E:/Universidad Catolica Boliviana/Ingenieria de Calidad/unitTest/spec/string_ops_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1446032991
+    "timestamp": 1446073316
   }
 }

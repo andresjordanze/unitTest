@@ -1,25 +1,21 @@
 class Discount
-    {
-        def calculateDiscount(SalesAmnt)
-            double DiscountPrice = 0.0
-
-            if (SalesAmnt == 0 || SalesAmnt < 0)
-                raise ArgumentError.new(" Sales Amount should not be 'Zero/Negative'")
-            elsif (SalesAmnt >= 1000 && SalesAmnt < 2000)
-                # 5% Discount
-                DiscountPrice = SalesAmnt - (SalesAmnt * 0.05)
-            elsif (SalesAmnt >= 2000 && SalesAmnt < 5000)
-                # 10% Discount
-                DiscountPrice = SalesAmnt - (SalesAmnt * 0.1)
-
-            elsif (SalesAmnt >= 5000 && SalesAmnt < 20000)
-                # 50% Discount
-                DiscountPrice = SalesAmnt - (SalesAmnt * 0.5)
-            else
-                # No Discount
-                DiscountPrice = SalesAmnt - 0.0
-            end
-
-            DiscountPrice
+    def calculateDiscount(salesAmnt)
+        @discountPrice = 0.0
+        if (salesAmnt == 0 || salesAmnt < 0)
+            raise ArgumentError.new(" Sales Amount should not be 'Zero/Negative'")
+        elsif (salesAmnt >= 1000 && salesAmnt < 2000)
+            # 5% Discount
+            @discountPrice = salesAmnt - (salesAmnt * 0.05)
+        elsif (salesAmnt >= 2000 && salesAmnt < 5000)
+            # 10% Discount
+            @discountPrice = salesAmnt - (salesAmnt * 0.1)
+        elsif (salesAmnt >= 5000 && salesAmnt < 20000)
+            # 50% Discount
+            @discountPrice = salesAmnt - (salesAmnt * 0.5)
+        else
+            # No Discount
+            @discountPrice = salesAmnt - 0.0
         end
+        @discountPrice
+    end
 end

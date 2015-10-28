@@ -1,5 +1,5 @@
 class Person
-	@m_Fname
+    @m_Fname
 	@m_Lname
 	@m_Age
 	@m_cash
@@ -11,7 +11,7 @@ class Person
 	    @m_cash = 0
 	end
 
-	def Person(strFName, strLName, iAge)
+	def initialize(strFName, strLName, iAge)
 		m_FName = strFName;
         m_LName = strLName;
         m_Age = iAge;
@@ -30,12 +30,13 @@ class Person
         @m_cash
     end
 
-    def BuyCar( fCost)
+    def BuyCar(fCost)
         @m_cash = @m_cash + fCost;
         if (@m_cash >= 0)
             true
         else
             false
+        end
     end
 	
 end
