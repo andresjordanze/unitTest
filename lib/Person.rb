@@ -20,7 +20,7 @@ class Person
     end
 
     def buyCar(fCost)
-        @m_cash = @m_cash + fCost
+        @m_cash = @m_cash - fCost
         if (@m_cash >= 0)
             true
         else

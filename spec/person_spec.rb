@@ -24,4 +24,17 @@ describe Person do
 			expect(person.cashBalance).to eq(expectedCashBalance)
 		end
 	end
+
+	describe '#to buy a car' do
+		it 'buy a car' do
+			carPrice = 100000
+			expectedResult = true
+			expect(person.buyCar(carPrice)).to eq(expectedResult)
+		end
+		it 'buy a expensive car' do
+			carPrice = 2000000
+			expectedResult = false
+			expect(person.buyCar(carPrice)).to eq(expectedResult)
+		end
+	end
 end
