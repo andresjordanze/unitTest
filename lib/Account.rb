@@ -5,18 +5,18 @@ class Account
 
     public
     def initialize
-        @minimunBalance = 10.00
+        @minimumBalance = 10.00
     end
         
-    def Deposit( amount)
+    def deposit( amount)
         @balance += amount
     end
 
-    def Withdraw(amount)
+    def withdraw(amount)
         @balance -= amount
     end
 
-    def TransferFunds(destination, amount)
+    def transferFunds(destination, amount)
         if (@balance - amount < minimumBalance)
             raise InsufficientFundsException
         end
@@ -24,7 +24,7 @@ class Account
         Withdraw(amount)
     end
 
-    def Balance
+    def balance
         @balance
     end
         
