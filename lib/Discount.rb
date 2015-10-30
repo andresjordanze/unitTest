@@ -1,5 +1,5 @@
 class Discount
-    def calculateDiscount(salesAmnt)
+    def self.calculateDiscount(salesAmnt)
         @discountPrice = 0.0
         if (salesAmnt == 0 || salesAmnt < 0)
             raise ArgumentError.new(" Sales Amount should not be 'Zero/Negative'")
