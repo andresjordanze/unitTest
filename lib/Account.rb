@@ -1,4 +1,9 @@
 class Account
+    private
+    @balance
+    @minimumBalance
+
+    public
     def initialize
         @minimumBalance = 10.00
         @balance = 0.00
@@ -28,8 +33,4 @@ class Account
     def minimumBalance
         @minimumBalance
     end
-
-    private
-    @balance
-    @minimumBalance
 end

@@ -43,15 +43,8 @@ describe Account do
 		end
 
 		describe '# minimumBalance is less than amount' do 	
-			it 'returns correct balance in account' do
-				expectedBalance = 13.00
-				account.transferFunds(destinationAccount, 4.00)
-				expect(account.balance).to eq(expectedBalance)
-			end
-
-			it 'returns correct balance in destination account' do
-				expectedBalance = 2.00
-				expect(destinationAccount.balance).to eq(expectedBalance)
+			it 'returns error' do
+				expect{account.transferFunds(destinationAccount, 4.00)}.to raise_error(ArgumentError, "InsufficientFundsException")
 			end
 		end
 	end

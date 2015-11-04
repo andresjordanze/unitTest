@@ -3,7 +3,7 @@ require 'discount'
 
 describe Discount do
 
-	describe "#to get correct discount" do
+	describe "#calculateDiscount" do
 
 		it 'should return sales amount with 5% discount' do
 			salesAmount = 1001
